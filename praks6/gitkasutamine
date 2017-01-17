@@ -1,0 +1,11 @@
+1)paigalda root all
+apt-get install git-all
+2) configgimine
+git config --global user.name "kasutajanimi"
+git config --global user.emal kasutaja@email.domeen
+git config --global core.editor nano
+3) mine gataloogi kus hoiad skriptid
+4)antud kaustas installeri git kasutamine
+git init
+5)loo ligip22s kontole
+got remote add nimi https://github.com/kasutajanimi/kaust
