@@ -9,3 +9,12 @@ git config --global core.editor nano
 git init
 5)loo ligip22s kontole
 got remote add nimi https://github.com/kasutajanimi/kaust
+6) lisa fail
+git add failinimi
+7) lisa muudatused
+git commit -a
+8) lykka kirjeldused kaudsele repositooriumile
+git push -u ligipääsu_nimi oksa_nimi
+näiteks git push -u skriptimine master
+9) juhul kui on probleem siis kasuta force
+git push -uf ligipääsu_nimi oksa_nimi
