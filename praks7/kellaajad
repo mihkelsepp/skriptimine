@@ -2,8 +2,12 @@
 #
 # kellaajad
 #
-echo -n "sisesta kellaaeg(tundidearv):"
-read kell
+#echo -n "sisesta kellaaeg(tundidearv):"
+#read kell
+kell=`date +%H`
+kasutaja=`whoami`
+#
+echo -n "$kasutaja,"
 if [ $kell -ge 6 -a $kell -lt 12 ]; then
 	echo "Tere hommikust!"
 elif [ $kell -ge 12 -a $kell -lt 18 ]; then
