@@ -1,0 +1,17 @@
+#!/bin/bash
+#
+# kellaajad
+#
+echo -n "sisesta kellaaeg(tundidearv):"
+read kell
+if [ $kell -ge 6 -a $kell -lt 12 ]; then
+	echo "Tere hommikust!"
+elif [ $kell -ge 12 -a $kell -lt 18 ]; then
+	echo "Tere Päevast"
+elif [ $kell -ge 18 -a $kell -lt 22 ]; then
+	echo "Tere Õhtust"
+elif [ $kell -ge 23 -a $kell -lt 24 -o $kell -ge 1 -a $kell -lt 5 ]; then
+	echo "Head ööd"
+else
+	echo "antud kellaaeg ei eksisteeri"
+fi
