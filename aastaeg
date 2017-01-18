@@ -1,0 +1,12 @@
+#!/bin/bash
+#
+# sesoonide määramine
+#
+echo -n "sisesta kuu number: "
+read kuu
+#
+if [ $kuu -eq 1 -o $kuu -eq 2 -o $kuu -eq 12 ]; then 
+	echo "praegu on talv"
+elif [ $kuu -eq 3 -o $kuu -eq 4 -o $kuu -eq 5 ]; then
+	echo "praegu on kevad"
+fi
