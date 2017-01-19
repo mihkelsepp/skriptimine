@@ -1,0 +1,23 @@
+#!/bin/bash
+#
+# kümne arvuvahemiku paarisarvude summa
+#
+echo -n "Sisesta kümne arvuvahemiku algus punkt: "
+read algus
+lopp=$(expr $algus + 10)
+#echo $lopp
+#
+for (( arv=$algus; arv<$lopp; arv++ ))
+do
+	paaris=$(($arv % 2))
+	if [ $paaris -eq 0 ]; then
+		summa=$(($summa + $arv))
+		#echo $summa
+	fi
+done
+echo -n "arvude vahemikus "
+echo -n $algus 
+echo -n " kuni "
+echo -n $lopp
+echo -n " paarisavude summa on "
+echo $summa
