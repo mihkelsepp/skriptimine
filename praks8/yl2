@@ -1,0 +1,21 @@
+#!/bin/bash
+#
+# arvu numbrite summa leidmine
+#
+echo -n "sisesta suvaline täisarv: "
+read arv			#loeb väärtuse $arv
+echo -n "arvu $arv numbrite summa on "
+#
+if [ $arv -lt 0]; then		#kui arv on väiksem kui null
+	arv=$(($arv * -1))	#korrutab negatiivse arvu -1ga et saada positiivne ja $ arv on ymber defineeritud
+	echo -n "-"		#väljastab negatiive algväärtuse korral miinus margi
+fi
+#
+summa=0				#defineerib summa nulliks
+while [ $arv -gt 0 ]		#kui arv on suurem kui 0 siis
+do				#tee
+	jaak=$(($arv % 10))	#defineerib jäägi
+	summa=$(($summa + $jaak))	#redefinnerib summa 0+$jaak
+	arv=$(($arv/10))	#redefineerib arvu
+done
+echo "$summa"

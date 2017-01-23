@@ -1,0 +1,10 @@
+#!/bin/bash
+#
+#styklid
+#
+
+for (( arv=1; arv<4; arv++ ))
+do
+	echo "$arv"
+done
+
