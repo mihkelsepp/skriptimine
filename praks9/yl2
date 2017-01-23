@@ -1,0 +1,8 @@
+#!/bin/bash
+#
+#3 faili
+#
+for (( arv=1; arv<4; arv++ ))
+do
+	cat "file$arv"
+done
