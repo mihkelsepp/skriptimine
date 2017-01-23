@@ -1,0 +1,20 @@
+#!/bin/bash
+#
+# kuupäev ja kella aeg
+# Mihkel Sepp
+# Väljastab kuupäeva ja kella aja
+echo -n "Tere, "
+echo -n `whoami`
+echo -n " "
+echo -n "palun vajutage enter klahvi."
+read nothing
+echo -n "täna on: "
+echo -n `date +%D`
+echo -n " kell "
+echo `date +%T`
+echo -n "palun vajuta enter, et näha "
+echo -n `date +%B`
+echo -n " kuu kalendrit"
+read nothing2
+echo
+cal | tail -n 7

@@ -1,0 +1,22 @@
+#!/bin/bash
+#
+# menu for
+# mihkel sepp
+# sama mis yl 2 aind et failidena
+echo "menu"
+echo
+echo "1) Steak and potatoes"
+echo "2) fish and chips"
+echo "3) soup and salad"
+#
+echo
+echo -n "palun sisestage eine number: "
+read number
+echo
+if [ $number=1 ]; then
+	cat ./menu1
+elif [ $number=2 ]; then
+	cat ./menu2
+elif [ $number=2 ]; then
+	cat ./menu3
+fi

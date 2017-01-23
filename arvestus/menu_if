@@ -1,0 +1,20 @@
+#!/bin/bash
+#
+# nom nom menüü
+# mihkel sepp
+# skript väljastab toidu menüü 
+echo "1) steak and potatoes"
+echo "2) fish and chips"
+echo "3) soup and salad"
+echo -n "Tehke palun valik (1; 2; 3): "
+read nom
+if [ $nom=1 ]; then
+	echo "Steak and potatoes is on the way!"
+	echo "Enjoy!"
+elif [ $nom=2 ]; then
+	echo "Fish and chips is on the way!"
+	echo "Enjoy"
+elif [ $nom=3 ]; then
+	echo "Soup and salad is on the way!"
+	echo "Enjoy"
+fi
