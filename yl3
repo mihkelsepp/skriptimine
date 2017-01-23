@@ -1,0 +1,20 @@
+#!/bin/bash
+#
+# n2itab mis failid on olemas
+# loob nen de commitid
+#
+for kaust in ` ls . `
+do
+	if [ -d $kaust ];then
+		echo $kaust
+		cd $kaust
+		lisa=""
+		for  failid in `ls .`
+		do
+			lisa=$lisa"$failid "
+		done
+		git add $lisa
+		git commit -m "$kaust ylesanded"
+		cd ..
+	fi
+done
